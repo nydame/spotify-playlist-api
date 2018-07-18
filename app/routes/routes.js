@@ -4,7 +4,6 @@ module.exports = function(app, db) {
     });
     app.post('/testing2', (req, resp) => {
         console.log(req.body);
-        resp.send('Another test.');
-        // See response in Postman at localhost:3000/testing2
+        resp.send('Posting test.');
     });
 };
